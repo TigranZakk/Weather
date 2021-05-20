@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name='keywords'
+		content="weather,temp,temperature,weather for 7 days,temperature in my country,current weather,weather in tomorrow,mycloud,mycloud.best,temp-climate,my cloud">
+	<meta name="description" content="Current Weather - Minimum And Maximum Weather Weekly for you">
+	<link rel="icon" href="image/favicon.ico">
+	<link rel="stylesheet" href="style/style.min.css">
+	<title>Current Weather - Minimum And Maximum Weather Weekly for you</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0H4KFC335C"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0H4KFC335C');
+	</script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () {
+				(m[i].a = m[i].a || []).push(arguments)
+			};
+			m[i].l = 1 * new Date();
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+				a)
+		})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(73374751, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/73374751" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+	<div id="background"></div>
+	<div id="loader"></div>
+	<div id="search">
+		<div class="close">
+			<img src="image/close.png" alt="close" title="Close">
+		</div>
+		<div class="mainSearch">
+			<input type="text" placeholder="Search Country">
+			<img src="image/search.png" alt="Search" title="Search">
+		</div>
+		<h3>Error: Country not found</h3>
+		<section>
+			<div>
+				<h4></h4>
+				<img src="" alt="WeatherInCountry" title="WeatherInCountry">
+			</div>
+			<p></p>
+			<h5 class="sunrise">Sunrise:     <span></span></h5>
+			<h5 class="sunset">Sunset:     <span></span></h5>
+			<h5 class="speed">Speed:     <span></span></h5>
+		</section>
+	</div>
+	<div class="container">
+		<nav>
+			<div id="time">
+				<p></p>
+			<span>:</span>
+			<p></p>
+			<span>:</span>
+			<p></p>
+			</div>
+			<div id="menu">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</nav>
+		<div class="country"></div>
+		<img src="" alt="Weather" title="Weather" id="weatherIcon">
+		<h1 id="celsius"></h1>
+		<h2 id="day"></h2>
+		<footer>
+			<div class="daily">
+				<h2>
+					<img src="" alt="">
+					<span></span>
+				</h2>
+				<secttion class="morning">
+					<h3>Morning</h3>
+					<h4></h4>
+				</secttion>
+				<secttion class="noon">
+					<h3>Noon</h3>
+					<h4></h4>
+				</secttion>
+				<secttion class="night">
+					<h3>Night</h3>
+					<h4></h4>
+				</secttion>
+			</div>
+			<div class="week">
+				<section>
+					<strong></strong>
+					<img src="" alt="">
+					<h4></h4>
+				</section>
+				<section>
+					<strong></strong>
+					<img src="" alt="">
+					<h4></h4>
+				</section>
+				<section>
+					<strong></strong>
+					<img src="" alt="">
+					<h4></h4>
+				</section>
+				<section>
+					<strong></strong>
+					<img src="" alt="">
+					<h4></h4>
+				</section>
+				<section>
+					<strong></strong>
+					<img src="" alt="">
+					<h4></h4>
+				</section>
+				<section>
+					<strong></strong>
+					<img src="" alt="">
+					<h4></h4>
+				</section>
+				<section>
+					<strong></strong>
+					<img src="" alt="">
+					<h4></h4>
+				</section>
+			</div>
+		</footer>
+	</div>
+
+	<!-- javascript -->
+	<script src="script/jquery.min.js"></script>
+	<script src="https://cdn.db-ip.com/js/dbip.js" data-api-key="p6bcac47ae71f0285cb6343d9697e56e41a2cb92"></script>
+	<script lang="text/javascript" src='script/weather.min.js'></script>
+	<script lang="text/javascript" src='script/menu.min.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@font-face{
+    font-family: error;
+    src: url("../font/Error-regular.ttf");
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    background: url("../image/error.jpg") no-repeat;
+    background-position: 80% 50%;
+    background-size: cover;
+    font-family: error;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    font-size: 120px;
+}
+a{
+    position: absolute;
+    bottom: 30px;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    left: 50%;
+    transform: translate(-50%);
+}
+a:hover{
+    color: red;
+}
