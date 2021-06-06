@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +10,7 @@
 	<link rel="icon" href="image/favicon.ico">
 	<link rel="stylesheet" href="style/style.min.css">
 	<title>Current Weather - Minimum And Maximum Weather Weekly for you</title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0H4KFC335C"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V2P1ZY21LX"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -19,31 +19,8 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'G-0H4KFC335C');
+		gtag('config', 'G-V2P1ZY21LX');
 	</script>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
-		(function (m, e, t, r, i, k, a) {
-			m[i] = m[i] || function () {
-				(m[i].a = m[i].a || []).push(arguments)
-			};
-			m[i].l = 1 * new Date();
-			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
-				a)
-		})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym(73374751, "init", {
-			clickmap: true,
-			trackLinks: true,
-			accurateTrackBounce: true,
-			webvisor: true
-		});
-	</script>
-	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/73374751" style="position:absolute; left:-9999px;" alt="" /></div>
-	</noscript>
-	<!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -64,19 +41,19 @@
 				<img src="" alt="WeatherInCountry" title="WeatherInCountry">
 			</div>
 			<p></p>
-			<h5 class="sunrise">Sunrise:     <span></span></h5>
-			<h5 class="sunset">Sunset:     <span></span></h5>
-			<h5 class="speed">Speed:     <span></span></h5>
+			<h5 class="sunrise">Sunrise: <span></span></h5>
+			<h5 class="sunset">Sunset: <span></span></h5>
+			<h5 class="speed">Speed: <span></span></h5>
 		</section>
 	</div>
 	<div class="container">
 		<nav>
 			<div id="time">
 				<p></p>
-			<span>:</span>
-			<p></p>
-			<span>:</span>
-			<p></p>
+				<span>:</span>
+				<p></p>
+				<span>:</span>
+				<p></p>
 			</div>
 			<div id="menu">
 				<div></div>
@@ -85,7 +62,15 @@
 			</div>
 		</nav>
 		<div class="country"></div>
-		<img src="" alt="Weather" title="Weather" id="weatherIcon">
+		<div id="weatherBox">
+			<svg width="120" height="120" viewBox="0 0 64 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M4.66582 35.9159C33.1658 65.9159 51.6697 70.6445 61.1658 35.9159C78.6658 -28.0841 -22.5115 7.30825 4.66582 35.9159Z"
+					fill="#03F0FF" />
+			</svg>
+
+			<img src="" alt="Weather" title="Weather" id="weatherIcon">
+		</div>
 		<h1 id="celsius"></h1>
 		<h2 id="day"></h2>
 		<footer>
